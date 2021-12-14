@@ -1,0 +1,24 @@
+{
+  "name": "saga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss/style.scss:dist/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zadoque1/saga.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zadoque1/saga/issues"
+  },
+  "homepage": "https://github.com/zadoque1/saga#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "node-sass": "^7.0.0",
+    "sass": "^1.45.0"
+  }
+}

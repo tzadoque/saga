@@ -1,0 +1,27 @@
+// colors
+$main: #09aee0;
+
+$theme-colors: (
+  "blue": $main,
+) !default;
+
+// spacers
+$spacer: 1rem;
+$awe-spacers: (
+  "awe-8":   $spacer * 0.5,
+);
+
+// font features variables definition
+$font-sizes: (
+  12: 12px,
+);
+
+$font-weight-thin:          100;
+$font-weight-extra-light:   200;
+$font-weight-light:         300;
+$font-weight-regular:       400;
+$font-weight-medium:        500;
+$font-weight-semi-bold:     600;
+$font-weight-bold:          700;
+$font-weight-extra-bold:    800;
+$font-weight-black:         900;

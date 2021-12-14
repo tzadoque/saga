@@ -1,1 +1,1 @@
-# saga
+# saga - software para aulas gamificadas

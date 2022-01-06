@@ -1,19 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAGA</title>
 
-    <!--Fonte-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!--CSS-->
-    <link rel="stylesheet" href="/dist/css/style.css">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>SAGA</title>
+
+	<!--Fonte-->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+	<!--CSS-->
+	<link rel="stylesheet" href="/dist/css/style.css" />
 </head>
-<body class="d-flex justify-content-center align-items-center vh-100">
-    <h1 class="fw-black">SAGA</h1>
+
+<body class="">
+	<header class="" id="menu-inicial">
+		<nav class="navbar navbar-expand-lg bg-blue-1">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="/dist/img/logo-light.png" alt="Logo do SAGA">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end align-items-center gap-32">
+						<li class="nav-item">
+							<a class="nav-link text-aqua-1 fz-16 fw-black" href="#sobre">Sobre</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-aqua-1 fz-16 fw-black" href="#contato">Contato</a>
+						</li>
+						<li class="division-bar"></li>
+						<li class="nav-item">
+							<a class="nav-link text-aqua-1 fz-16 fw-black" href="login.html">Entrar</a>
+						</li>
+						<li class="nav-item">
+							<a class="text-blue-1 fz-16 fw-black button-1" href="cadastro.html">Cadastrar-se</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="bg-blue-1">
+		<div class="container pt-36 pb-132">
+			<div class="row">
+				<div class="col-6">
+					<div class="pb-40">
+						<h1 class="fz-36 text-white fw-bold">
+							Torne suas aulas mais dinâmicas e atrativas, utilizando a gamificação como ferramenta educacional.
+						</h1>
+					</div>
+					<div class="pb-64">
+						<p class="fz-16 text-white fw-medium">
+							Através da gamificação, os alunos possuem um melhor desempenho e engajamento, na realização de atividades.
+						</p>
+					</div>
+					<div>
+						<a href="#beneficios" class="button-2 fw-extra-bold">Saiba mais</a>
+					</div>
+				</div>
+				<div class="col-5 offset-lg-1 d-flex justify-content-center align-items-center">
+					<img src="/dist/img/ilustracao-1.png" alt="">
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="module" src="/dist/js/index.js"></script>
 </body>
+
 </html>

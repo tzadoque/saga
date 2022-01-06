@@ -1,19 +1,52 @@
 // colors
-$main: #09aee0;
+$blue-1: #001C5C;
+$blue-2: #062469;
+$aqua-1: #64EFBF;
+$aqua-2: #80FFD3;
+$dark-1: #1A1A1A;
+$dark-2: #333333;
+$dark-3: #666666;
+$dark-4: #808080;
+$light-1: #EDEDED;
+$light-2: #CCCCCC;
+$light-3: #666666;
+$white: #FFFFFF;
 
 $theme-colors: (
-  "blue": $main,
+  "blue-1": $blue-1,
+  "blue-2": $blue-2,
+  "aqua-1": $aqua-1,
+  "aqua-2": $aqua-2,
+  "dark-1": $dark-1,
+  "dark-2": $dark-2,
+  "dark-3": $dark-3,
+  "dark-4": $dark-4,
+  "light-1": $light-1,
+  "light-2": $light-2,
+  "light-3": $light-3,
+  "white": $white
 ) !default;
 
 // spacers
 $spacer: 1rem;
 $awe-spacers: (
-  "awe-8":   $spacer * 0.5,
+  "8":   $spacer * 0.5,
+  "16":  $spacer,
+  "32":  $spacer * 2,
+  "36":  $spacer * 2.25,
+  "40":  $spacer * 2.5,
+  "64":  $spacer * 4,
+  "128": $spacer * 8,
+  "132": $spacer * 8.25
 );
 
 // font features variables definition
 $font-sizes: (
   12: 12px,
+  16: 16px,
+  18: 18px,
+  24: 24px,
+  36: 36px
 );
 
 $font-weight-thin:          100;
@@ -25,3 +58,6 @@ $font-weight-semi-bold:     600;
 $font-weight-bold:          700;
 $font-weight-extra-bold:    800;
 $font-weight-black:         900;
+
+//navbar
+$navbar-padding-y: 0;

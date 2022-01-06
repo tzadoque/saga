@@ -1,0 +1,22 @@
+#menu-inicial {
+  .border-hover::hover {
+    border-bottom: 1px solid $aqua-1;
+  }
+  .division-bar {
+    height: 32px;
+    background: #B2B2B2;
+    width: 1px;
+    margin: 0 16px;
+  }
+  nav {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  &.sticky-top {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0);
+    nav {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}

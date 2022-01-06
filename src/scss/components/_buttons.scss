@@ -1,0 +1,21 @@
+.button-1, .button-2 {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 48px;
+}
+
+.button-1 {
+  background: $aqua-1;
+  border-radius: 100px;
+}
+
+.button-2 {
+  background: $blue-2;
+  color: $white;
+  border-radius: 100px;
+  box-shadow: 0px 0px 4px #80FFD3;
+  &:hover {
+    background: $aqua-1;
+    color: $blue-1;
+  }
+}

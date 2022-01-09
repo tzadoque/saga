@@ -36,6 +36,7 @@ $awe-spacers: (
   "36":  $spacer * 2.25,
   "40":  $spacer * 2.5,
   "64":  $spacer * 4,
+  "72":  $spacer * 4.5,
   "128": $spacer * 8,
   "132": $spacer * 8.25
 );
@@ -43,6 +44,7 @@ $awe-spacers: (
 // font features variables definition
 $font-sizes: (
   12: 12px,
+  14: 14px,
   16: 16px,
   18: 18px,
   24: 24px,

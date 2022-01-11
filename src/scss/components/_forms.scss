@@ -12,11 +12,13 @@
     padding: 16px;
     font-size: 14px;
     font-weight: 600;
+    cursor: text;
     &::placeholder {
       color: $light-2;
     }
   }
   textarea {
     resize: none;
+    height: 216%;
   }
 }

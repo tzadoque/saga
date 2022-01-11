@@ -15555,12 +15555,14 @@ textarea.form-control-lg {
   padding: 16px;
   font-size: 14px;
   font-weight: 600;
+  cursor: text;
 }
 #contato form input::placeholder, #contato form textarea::placeholder {
   color: #CCCCCC;
 }
 #contato form textarea {
   resize: none;
+  height: 216%;
 }
 
 * {

@@ -2,8 +2,26 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 27px 32px;
+  padding: 27px 24px;
   box-shadow: 0px 0px 8px rgba(26, 26, 26, 0.25);
   border-radius: 10px;
-  max-width: 274px;
+  max-width: 300px;
+  width: 300px;
+  .card-body {
+    padding: 16px 0 0 0;
+  }
+}
+
+.card-imagem {
+  height: 269px;
+  width: 100%;
+  background: #F2F5F7;
+  border: 1px solid #C2D1D9;
+}
+
+.card-galeria {
+  width: 350px;
+  height: 282px;
+  background: #F2F5F7;
+  border: 1px solid #C2D1D9;
 }

@@ -1,0 +1,22 @@
+#contato form {
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    color: $dark-2;
+    margin-bottom: 8px;
+  }
+  input, textarea {
+    background: $white;
+    border: 1px solid $light-2;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    &::placeholder {
+      color: $light-2;
+    }
+  }
+  textarea {
+    resize: none;
+  }
+}

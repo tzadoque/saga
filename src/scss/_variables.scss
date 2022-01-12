@@ -31,11 +31,13 @@ $theme-colors: (
 $spacer: 1rem;
 $awe-spacers: (
   "8":   $spacer * 0.5,
+  "12":  $spacer * 0.75,
   "16":  $spacer,
   "24":  $spacer * 1.5,
   "32":  $spacer * 2,
   "36":  $spacer * 2.25,
   "40":  $spacer * 2.5,
+  "48":  $spacer * 3,
   "64":  $spacer * 4,
   "72":  $spacer * 4.5,
   "128": $spacer * 8,

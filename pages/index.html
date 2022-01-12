@@ -13,6 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
 	<!--CSS-->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="/dist/css/style.css" />
 </head>
 
@@ -184,7 +185,85 @@
 		</div>
 	</section>
 
-	<section id="depoimentos"></section>
+	<section id="depoimentos">
+		<div class="container pt-72 overflow-hidden">
+			<div class="pb-48">
+				<h2 class="text-blue-1 fw-bold fz-24 text-center">Depoimentos</h2>
+			</div>
+			<div class="swiper overflow-visible">
+				<div class="swiper-wrapper d-flex align-items-center pt-16 pb-72">
+					<div class="swiper-slide d-flex justify-content-center">
+						<div class="card-slide d-flex gap-32">
+							<div>
+								<img src="/dist/img/avatar1.png" alt="">
+							</div>
+							<div class="d-flex flex-column">
+								<div class="d-flex justify-content-between">
+									<div>
+										<h4 class="fz-16 fw-bold text-dark-1">Luna Silva</h4>
+									</div>
+									<div>
+										<span class="fz-12 fw-black fst-italic text-dark-4">(professora no IFRN)</span>
+									</div>
+								</div>
+								<div class="fz-14 text-dark-3">
+									<p>
+										“Após utilizar o SAGA com as minhas turmas, notei uma melhora expressiva em termos de engajamento e melhores resultados em provas, testes e atividades.”
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide d-flex justify-content-center">
+						<div class="card-slide d-flex gap-32">
+							<div>
+								<img src="/dist/img/avatar2.png" alt="">
+							</div>
+							<div class="d-flex flex-column">
+								<div class="d-flex justify-content-between">
+									<div>
+										<h4 class="fz-16 fw-bold text-dark-1">Lucas Miguel</h4>
+									</div>
+									<div>
+										<span class="fz-12 fw-black fst-italic text-dark-4">(professor no IFRN)</span>
+									</div>
+								</div>
+								<div class="fz-14 text-dark-3">
+									<p>
+										“Após utilizar o SAGA com as minhas turmas, notei uma melhora expressiva em nível de engajamento e melhores resultados em provas, testes e atividades.”
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide d-flex justify-content-center">
+						<div class="card-slide d-flex gap-32">
+							<div>
+								<img src="/dist/img/avatar3.png" alt="">
+							</div>
+							<div class="d-flex flex-column">
+								<div class="d-flex justify-content-between">
+									<div>
+										<h4 class="fz-16 fw-bold text-dark-1">Ana Maria</h4>
+									</div>
+									<div>
+										<span class="fz-12 fw-black fst-italic text-dark-4">(professora no IFRN)</span>
+									</div>
+								</div>
+								<div class="fz-14 text-dark-3">
+									<p>
+										“Após utilizar o SAGA com as minhas turmas, notei uma melhora expressiva em termos de engajamento e melhores resultados em provas, testes e atividades.”
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+	</section>
 
 	<section id="sobre" class="bg-blue-1">
 		<div class="container py-64">
@@ -245,6 +324,9 @@
 								<textarea class="form-control" id="inputMensagem" rows="3" placeholder="Escreva a mensagem"></textarea>
 							</div>
 						</div>
+						<div class="col-12 d-flex justify-content-end pt-32">
+							<button type="submit" class="button-3 fw-extra-bold fz-14">Enviar mensagem</button>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -267,6 +349,24 @@
 		</div>
 	</footer>
 
+	<script type="module">
+		import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js';
+	
+		const swiper = new Swiper('.swiper', {
+			loop: true,
+			slidesPerView: 1,
+			centeredSlides: true,
+			centeredSlidesBounds: true,
+			spaceBetween: 32,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			autoplay: {
+				delay: 5000,
+			},
+		});
+	</script>
 	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script type="module" src="/dist/js/index.js"></script>
 </body>

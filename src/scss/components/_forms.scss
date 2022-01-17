@@ -23,7 +23,7 @@
   }
 }
 
-#cadastro form {
+#cadastro form, #login form {
   width: 470px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -159,6 +159,7 @@
 
   .form__required {
     color: #DB0000;
+    user-select: none;
   }
 
   .form__division {
@@ -166,6 +167,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    user-select: none;
     span {
       font-size: 1rem * 0.75;
       color: $dark-4;
@@ -190,6 +192,7 @@
     font-style: italic;
     padding-top: 8px;
     color: $light-3;
+    user-select: none;
   }
 
   ul.field__requires {

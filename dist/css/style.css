@@ -30,6 +30,7 @@
   --bs-gray-900: #212529;
   --bs-blue-1: #001C5C;
   --bs-blue-2: #062469;
+  --bs-blue-3: #56C6FF;
   --bs-aqua-1: #64EFBF;
   --bs-aqua-2: #80FFD3;
   --bs-dark-1: #1A1A1A;
@@ -42,6 +43,7 @@
   --bs-white: #FFFFFF;
   --bs-blue-1-rgb: 0, 28, 92;
   --bs-blue-2-rgb: 6, 36, 105;
+  --bs-blue-3-rgb: 86, 198, 255;
   --bs-aqua-1-rgb: 100, 239, 191;
   --bs-aqua-2-rgb: 128, 255, 211;
   --bs-dark-1-rgb: 26, 26, 26;
@@ -2994,6 +2996,36 @@ textarea.form-control-lg {
   border-color: #062469;
 }
 
+.btn-blue-3 {
+  color: #000;
+  background-color: #56C6FF;
+  border-color: #56C6FF;
+}
+.btn-blue-3:hover {
+  color: #000;
+  background-color: #6fcfff;
+  border-color: #67ccff;
+}
+.btn-check:focus + .btn-blue-3, .btn-blue-3:focus {
+  color: #000;
+  background-color: #6fcfff;
+  border-color: #67ccff;
+  box-shadow: 0 0 0 0.25rem rgba(73, 168, 217, 0.5);
+}
+.btn-check:checked + .btn-blue-3, .btn-check:active + .btn-blue-3, .btn-blue-3:active, .btn-blue-3.active, .show > .btn-blue-3.dropdown-toggle {
+  color: #000;
+  background-color: #78d1ff;
+  border-color: #67ccff;
+}
+.btn-check:checked + .btn-blue-3:focus, .btn-check:active + .btn-blue-3:focus, .btn-blue-3:active:focus, .btn-blue-3.active:focus, .show > .btn-blue-3.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(73, 168, 217, 0.5);
+}
+.btn-blue-3:disabled, .btn-blue-3.disabled {
+  color: #000;
+  background-color: #56C6FF;
+  border-color: #56C6FF;
+}
+
 .btn-aqua-1 {
   color: #000;
   background-color: #64EFBF;
@@ -3341,6 +3373,31 @@ textarea.form-control-lg {
 }
 .btn-outline-blue-2:disabled, .btn-outline-blue-2.disabled {
   color: #062469;
+  background-color: transparent;
+}
+
+.btn-outline-blue-3 {
+  color: #56C6FF;
+  border-color: #56C6FF;
+}
+.btn-outline-blue-3:hover {
+  color: #000;
+  background-color: #56C6FF;
+  border-color: #56C6FF;
+}
+.btn-check:focus + .btn-outline-blue-3, .btn-outline-blue-3:focus {
+  box-shadow: 0 0 0 0.25rem rgba(86, 198, 255, 0.5);
+}
+.btn-check:checked + .btn-outline-blue-3, .btn-check:active + .btn-outline-blue-3, .btn-outline-blue-3:active, .btn-outline-blue-3.active, .btn-outline-blue-3.dropdown-toggle.show {
+  color: #000;
+  background-color: #56C6FF;
+  border-color: #56C6FF;
+}
+.btn-check:checked + .btn-outline-blue-3:focus, .btn-check:active + .btn-outline-blue-3:focus, .btn-outline-blue-3:active:focus, .btn-outline-blue-3.active:focus, .btn-outline-blue-3.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(86, 198, 255, 0.5);
+}
+.btn-outline-blue-3:disabled, .btn-outline-blue-3.disabled {
+  color: #56C6FF;
   background-color: transparent;
 }
 
@@ -5075,6 +5132,15 @@ textarea.form-control-lg {
   color: #031232;
 }
 
+.alert-blue-3 {
+  color: #224f66;
+  background-color: #ddf4ff;
+  border-color: #cceeff;
+}
+.alert-blue-3 .alert-link {
+  color: #1b3f52;
+}
+
 .alert-aqua-1 {
   color: #28604c;
   background-color: #e0fcf2;
@@ -5458,6 +5524,20 @@ textarea.form-control-lg {
   color: #FFFFFF;
   background-color: #04163f;
   border-color: #04163f;
+}
+
+.list-group-item-blue-3 {
+  color: #224f66;
+  background-color: #ddf4ff;
+}
+.list-group-item-blue-3.list-group-item-action:hover, .list-group-item-blue-3.list-group-item-action:focus {
+  color: #224f66;
+  background-color: #c7dce6;
+}
+.list-group-item-blue-3.list-group-item-action.active {
+  color: #FFFFFF;
+  background-color: #224f66;
+  border-color: #224f66;
 }
 
 .list-group-item-aqua-1 {
@@ -6613,6 +6693,13 @@ textarea.form-control-lg {
   color: #051d54;
 }
 
+.link-blue-3 {
+  color: #56C6FF;
+}
+.link-blue-3:hover, .link-blue-3:focus {
+  color: #78d1ff;
+}
+
 .link-aqua-1 {
   color: #64EFBF;
 }
@@ -7079,6 +7166,10 @@ textarea.form-control-lg {
 
 .border-blue-2 {
   border-color: #062469 !important;
+}
+
+.border-blue-3 {
+  border-color: #56C6FF !important;
 }
 
 .border-aqua-1 {
@@ -8708,6 +8799,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-blue-2-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-blue-3 {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-blue-3-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-aqua-1 {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-aqua-1-rgb), var(--bs-text-opacity)) !important;
@@ -8812,6 +8908,11 @@ textarea.form-control-lg {
 .bg-blue-2 {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-blue-2-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-blue-3 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-blue-3-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-aqua-1 {
@@ -16370,27 +16471,27 @@ textarea.form-control-lg {
   height: 216%;
 }
 
-#cadastro form {
+#cadastro form, #login form {
   width: 470px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background: #FFFFFF;
   padding: 64px;
 }
-#cadastro form h2, #cadastro form .h2, #cadastro form h2 label, #cadastro form .h2 label {
+#cadastro form h2, #cadastro form .h2, #cadastro form h2 label, #cadastro form .h2 label, #login form h2, #login form .h2, #login form h2 label, #login form .h2 label {
   font-size: 1rem;
   font-weight: 400;
   color: #333333;
   margin: 0;
 }
-#cadastro form label {
+#cadastro form label, #login form label {
   color: #666666;
   font-size: 1rem;
   font-weight: 500;
   user-select: none;
   cursor: pointer;
 }
-#cadastro form input[type=text], #cadastro form input[type=email], #cadastro form input[type=password] {
+#cadastro form input[type=text], #cadastro form input[type=email], #cadastro form input[type=password], #login form input[type=text], #login form input[type=email], #login form input[type=password] {
   all: unset;
   border: 1px solid #C4C4C4;
   color: #666666;
@@ -16401,13 +16502,13 @@ textarea.form-control-lg {
   box-sizing: border-box;
   font-size: 0.875rem;
 }
-#cadastro form input[type=text]::placeholder, #cadastro form input[type=email]::placeholder, #cadastro form input[type=password]::placeholder {
+#cadastro form input[type=text]::placeholder, #cadastro form input[type=email]::placeholder, #cadastro form input[type=password]::placeholder, #login form input[type=text]::placeholder, #login form input[type=email]::placeholder, #login form input[type=password]::placeholder {
   color: #C8C8C8;
 }
-#cadastro form input[type=text]:focus, #cadastro form input[type=email]:focus, #cadastro form input[type=password]:focus {
+#cadastro form input[type=text]:focus, #cadastro form input[type=email]:focus, #cadastro form input[type=password]:focus, #login form input[type=text]:focus, #login form input[type=email]:focus, #login form input[type=password]:focus {
   border: 1px solid #666666;
 }
-#cadastro form .eye {
+#cadastro form .eye, #login form .eye {
   cursor: pointer;
   position: absolute;
   right: 12px;
@@ -16415,17 +16516,17 @@ textarea.form-control-lg {
   height: 22px;
   background-color: #FFFFFF;
 }
-#cadastro form .eye.open-eye {
+#cadastro form .eye.open-eye, #login form .eye.open-eye {
   background-image: url(/dist/img/svg/open-eye.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
-#cadastro form .eye.closed-eye {
+#cadastro form .eye.closed-eye, #login form .eye.closed-eye {
   background-image: url(/dist/img/svg/closed-eye.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
-#cadastro form input[type=radio] {
+#cadastro form input[type=radio], #login form input[type=radio] {
   all: unset;
   cursor: pointer;
   display: block;
@@ -16437,10 +16538,10 @@ textarea.form-control-lg {
   box-sizing: border-box;
   position: relative;
 }
-#cadastro form input[type=radio]:checked {
+#cadastro form input[type=radio]:checked, #login form input[type=radio]:checked {
   outline: 1px solid #001C5C;
 }
-#cadastro form input[type=radio]:checked::after {
+#cadastro form input[type=radio]:checked::after, #login form input[type=radio]:checked::after {
   content: "";
   display: block;
   width: 12px;
@@ -16448,10 +16549,10 @@ textarea.form-control-lg {
   border-radius: 50%;
   background: #001C5C;
 }
-#cadastro form input[type=radio]:checked + label {
+#cadastro form input[type=radio]:checked + label, #login form input[type=radio]:checked + label {
   color: #001C5C;
 }
-#cadastro form input[type=date] {
+#cadastro form input[type=date], #login form input[type=date] {
   all: unset;
   padding: 12px;
   border: 1px solid #C4C4C4;
@@ -16459,7 +16560,7 @@ textarea.form-control-lg {
   width: 100%;
   color: #6b6b6b;
 }
-#cadastro form input[type=checkbox] {
+#cadastro form input[type=checkbox], #login form input[type=checkbox] {
   all: unset;
   cursor: pointer;
   display: block;
@@ -16469,17 +16570,17 @@ textarea.form-control-lg {
   border-radius: 2px;
   box-sizing: border-box;
 }
-#cadastro form input[type=checkbox]:checked {
+#cadastro form input[type=checkbox]:checked, #login form input[type=checkbox]:checked {
   background-color: #001C5C;
   border: 1px solid #001C5C;
   background-image: url(/dist/img/svg/done.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
-#cadastro form input[type=checkbox]:checked + label {
+#cadastro form input[type=checkbox]:checked + label, #login form input[type=checkbox]:checked + label {
   color: #001C5C;
 }
-#cadastro form button[type=submit] {
+#cadastro form button[type=submit], #login form button[type=submit] {
   all: unset;
   padding: 12px;
   box-sizing: border-box;
@@ -16492,20 +16593,22 @@ textarea.form-control-lg {
   background: #001C5C;
   cursor: pointer;
 }
-#cadastro form button[type=submit]:disabled {
+#cadastro form button[type=submit]:disabled, #login form button[type=submit]:disabled {
   background: #313131;
   cursor: auto;
 }
-#cadastro form .form__required {
+#cadastro form .form__required, #login form .form__required {
   color: #DB0000;
+  user-select: none;
 }
-#cadastro form .form__division {
+#cadastro form .form__division, #login form .form__division {
   padding: 24px 0;
   position: relative;
   display: flex;
   justify-content: center;
+  user-select: none;
 }
-#cadastro form .form__division span {
+#cadastro form .form__division span, #login form .form__division span {
   font-size: 0.75rem;
   color: #808080;
   display: inline-block;
@@ -16513,7 +16616,7 @@ textarea.form-control-lg {
   background: #FFFFFF;
   z-index: 100;
 }
-#cadastro form .form__division::before {
+#cadastro form .form__division::before, #login form .form__division::before {
   content: "";
   background: #EBEBEB;
   display: block;
@@ -16522,20 +16625,21 @@ textarea.form-control-lg {
   position: absolute;
   top: 50%;
 }
-#cadastro form .form__obs {
+#cadastro form .form__obs, #login form .form__obs {
   font-size: 0.75rem;
   font-style: italic;
   padding-top: 8px;
   color: #666666;
+  user-select: none;
 }
-#cadastro form ul.field__requires {
+#cadastro form ul.field__requires, #login form ul.field__requires {
   font-size: 0.75rem;
   color: #848484;
   font-weight: 700;
   padding-left: 16px;
   margin: 0;
 }
-#cadastro form ul.field__requires li::marker {
+#cadastro form ul.field__requires li::marker, #login form ul.field__requires li::marker {
   width: 10px;
 }
 
@@ -16555,7 +16659,7 @@ img {
   background: #f9f9f9;
 }
 
-#cadastro .logo {
+#cadastro .logo, #login .logo {
   width: 100%;
   display: flex;
   justify-content: center;

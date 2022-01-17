@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>SAGA - Cadastro</title>
+
+	<!--Fonte-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+	<!--CSS-->
+	<link rel="stylesheet" href="/dist/css/style.css" />
+</head>
+
+<body class="bg-blue-1">
+
+  <main class="container py-72" id="cadastro">
+    <div class="row">
+      <div class="col-5">
+        <form>
+          <h1 class="fw-semi-bold fz-24 text-center text-dark-1">Cadastre-se</h1>
+          <div class="form__division">
+            <span>Sobre você</span>
+          </div>
+          <div class="d-flex flex-column gap-32">
+            <div>
+              <h2>1. Você é Professor ou Aluno? <span class="form__required">*</span></h2>
+              <div class="d-flex flex-column gap-16 ps-8 pt-24">
+                <div class="d-flex align-items-center gap-16">
+                  <input type="radio" name="perfil" id="professor">
+                  <label for="professor">Professor</label>
+                </div>
+                <div class="d-flex align-items-center gap-16">
+                  <input type="radio" name="perfil" id="aluno">
+                  <label for="aluno">Aluno</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2>2. A qual tipo de instituição você faz parte? <span class="form__required">*</span></h2>
+              <span class="form__obs">(Observação: pode ser marcada mais de uma opção)</span>
+              <div class="d-flex flex-column gap-16 ps-8 pt-24">
+                <div class="d-flex align-items-center gap-16">
+                  <input type="checkbox" name="ePrivada" id="ePrivada">
+                  <label for="ePrivada">Privada</label>
+                </div>
+                <div class="d-flex align-items-center gap-16">
+                  <input type="checkbox" name="ePublicaEstadual" id="ePublicaEstadual">
+                  <label for="ePublicaEstadual">Pública Estadual</label>
+                </div>
+                <div class="d-flex align-items-center gap-16">
+                  <input type="checkbox" name="ePublicaMunicipal" id="ePublicaMunicipal">
+                  <label for="ePublicaMunicipal">Pública Municipal</label>
+                </div>
+                <div class="d-flex align-items-center gap-16">
+                  <input type="checkbox" name="ePublicaFederal" id="ePublicaFederal">
+                  <label for="ePublicaFederal">Pública Federal</label>
+                </div>
+                <div class="d-flex align-items-center gap-16">
+                  <input type="checkbox" name="eOutro" id="eOutro">
+                  <label for="eOutro">Outro</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2>3. Qual o seu gênero? <span class="form__required">*</span></h2>
+              <div class="d-flex flex-column gap-16 ps-8 pt-24">
+                <div class="d-flex align-items-center gap-16">
+                  <input type="radio" name="genero" id="gFem">
+                  <label for="gFem">Feminino</label>
+                </div>
+                <div class="d-flex align-items-center gap-16">
+                  <input type="radio" name="genero" id="gMasc">
+                  <label for="gMasc">Masculino</label>
+                </div>
+                <div class="d-flex align-items-center gap-16">
+                  <input type="radio" name="genero" id="gPni">
+                  <label for="gPni">Prefiro não informar</label>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2>4. Qual a sua data de nascimento? <span class="form__required">*</span></h2>
+              <div class="d-flex flex-column gap-16 pt-24">
+                <div class="d-flex align-items-center gap-16">
+                  <input type="date" name="dataNasc" id="dataNasc">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form__division">
+            <span>Dados de Acesso</span>
+          </div>
+          <div class="d-flex flex-column gap-32">
+            <div>
+              <h2><label for="nome">Nome</label> <span class="form__required">*</span></h2>
+              <div class="d-flex flex-column gap-16 pt-lg-8">
+                <div class="d-flex align-items-center gap-16">
+                  <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2><label for="sobrenome">Sobrenome</label> <span class="form__required">*</span></h2>
+              <div class="d-flex flex-column gap-16 pt-lg-8">
+                <div class="d-flex align-items-center gap-16">
+                  <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome">
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2><label for="email">E-mail</label> <span class="form__required">*</span></h2>
+              <div class="d-flex flex-column gap-16 pt-lg-8">
+                <div class="d-flex align-items-center gap-16">
+                  <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com">
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2><label for="senha">Senha</label> <span class="form__required">*</span></h2>
+              <div class="d-flex flex-column gap-16 pt-lg-8">
+                <div class="d-flex align-items-center gap-16 position-relative">
+                  <input type="password" name="senha" id="senha" placeholder="Digite uma senha">
+                  <span class="eye open-eye"></span>
+                </div>
+                <ul class="field__requires">
+                  <li>No mínimo 8 caracteres;</li>
+                  <li>Ao menos uma letra MAIÚSCULA;</li>
+                  <li>Ao menos um número;</li>
+                  <li>Ao menos um caracter especial (Ex.: !@#$&%*).</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h2><label for="repetirSenha">Repetir senha</label> <span class="form__required">*</span></h2>
+              <div class="d-flex flex-column gap-16 pt-lg-8">
+                <div class="d-flex align-items-center gap-16 position-relative">
+                  <input type="password" name="repetirSenha" id="repetirSenha" placeholder="Digite a senha novamente">
+                  <span class="eye closed-eye"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-32">
+            <button type="submit" disabled>
+              Cadastrar-se
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-7">
+        <div class="logo">
+          <img src="/dist/img/logo-light.png" alt="">
+        </div>
+      </div>
+    </div>
+  </main>
+
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

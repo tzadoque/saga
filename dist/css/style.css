@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import '../../node_modules/swiper/swiper-bundle.css';
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -16370,8 +16371,181 @@ textarea.form-control-lg {
   height: 216%;
 }
 
+#cadastro form {
+  width: 470px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #FFFFFF;
+  padding: 64px;
+}
+#cadastro form h2, #cadastro form .h2, #cadastro form h2 label, #cadastro form .h2 label {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+}
+#cadastro form label {
+  color: #666666;
+  font-size: 1rem;
+  font-weight: 500;
+  user-select: none;
+  cursor: pointer;
+}
+#cadastro form input[type=text], #cadastro form input[type=email], #cadastro form input[type=password] {
+  all: unset;
+  border: 1px solid #C4C4C4;
+  color: #666666;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+}
+#cadastro form input[type=text]::placeholder, #cadastro form input[type=email]::placeholder, #cadastro form input[type=password]::placeholder {
+  color: #C8C8C8;
+}
+#cadastro form input[type=text]:focus, #cadastro form input[type=email]:focus, #cadastro form input[type=password]:focus {
+  border: 1px solid #666666;
+}
+#cadastro form .eye {
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  width: 22px;
+  height: 22px;
+  background-color: #FFFFFF;
+}
+#cadastro form .eye.open-eye {
+  background-image: url(/dist/img/svg/open-eye.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#cadastro form .eye.closed-eye {
+  background-image: url(/dist/img/svg/closed-eye.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#cadastro form input[type=radio] {
+  all: unset;
+  cursor: pointer;
+  display: block;
+  outline: 1px solid #666666;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: relative;
+}
+#cadastro form input[type=radio]:checked {
+  outline: 1px solid #001C5C;
+}
+#cadastro form input[type=radio]:checked::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #001C5C;
+}
+#cadastro form input[type=radio]:checked + label {
+  color: #001C5C;
+}
+#cadastro form input[type=date] {
+  all: unset;
+  padding: 12px;
+  border: 1px solid #C4C4C4;
+  border-radius: 8px;
+  width: 100%;
+  color: #6b6b6b;
+}
+#cadastro form input[type=checkbox] {
+  all: unset;
+  cursor: pointer;
+  display: block;
+  border: 1px solid #666666;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+#cadastro form input[type=checkbox]:checked {
+  background-color: #001C5C;
+  border: 1px solid #001C5C;
+  background-image: url(/dist/img/svg/done.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#cadastro form input[type=checkbox]:checked + label {
+  color: #001C5C;
+}
+#cadastro form button[type=submit] {
+  all: unset;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  background: #001C5C;
+  cursor: pointer;
+}
+#cadastro form button[type=submit]:disabled {
+  background: #313131;
+  cursor: auto;
+}
+#cadastro form .form__required {
+  color: #DB0000;
+}
+#cadastro form .form__division {
+  padding: 24px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#cadastro form .form__division span {
+  font-size: 0.75rem;
+  color: #808080;
+  display: inline-block;
+  padding: 0 16px;
+  background: #FFFFFF;
+  z-index: 100;
+}
+#cadastro form .form__division::before {
+  content: "";
+  background: #EBEBEB;
+  display: block;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+#cadastro form .form__obs {
+  font-size: 0.75rem;
+  font-style: italic;
+  padding-top: 8px;
+  color: #666666;
+}
+#cadastro form ul.field__requires {
+  font-size: 0.75rem;
+  color: #848484;
+  font-weight: 700;
+  padding-left: 16px;
+  margin: 0;
+}
+#cadastro form ul.field__requires li::marker {
+  width: 10px;
+}
+
 * {
   font-family: "Lato", sans-serif;
+}
+
+img {
+  user-select: none;
 }
 
 .ff-poppins {
@@ -16380,6 +16554,15 @@ textarea.form-control-lg {
 
 #funcionalidades, #contato {
   background: #f9f9f9;
+}
+
+#cadastro .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 128px;
+  position: sticky;
+  top: 128px;
 }
 
 /*# sourceMappingURL=style.css.map */

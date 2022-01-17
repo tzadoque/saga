@@ -9,11 +9,10 @@
 
 	<!--Fonte-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
 	<!--CSS-->
-	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="/dist/css/style.css" />
 </head>
 
@@ -368,7 +367,10 @@
 		});
 	</script>
 	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script type="module" src="/dist/js/index.js"></script>
+	<script type="module">
+		import stickyMenu from '/dist/js/modules/stickyMenu.js';
+		stickyMenu();
+	</script>
 </body>
 
 </html>
